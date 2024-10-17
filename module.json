@@ -1,0 +1,30 @@
+{
+    "name": "marpo-dice-jail",
+    "title": "Dice Jail",
+    "description": "A module to jail dice from Dice So Nice, with a premade macro to jail the last dice rolled.",
+    "version": "1.1.11",
+    "author": "MarpoOcknew",
+    "minimumCoreVersion": "11",
+    "esmodules": ["scripts/dice-jail.js"],
+    "styles": ["styles/dice-jail.css"],
+    "dependencies": [
+        {
+            "name": "dice-so-nice",
+            "manifest": "https://raw.githubusercontent.com/TehGM/dice-so-nice/main/module.json"
+        }
+    ],
+    "flags": {
+        "core": {
+            "predefinedMacros": [
+                {
+                    "name": "Jail Last Dice",
+                    "command": "game.diceJail.jailLastDice();",
+                    "type": "script",
+                    "img": "icons/environment/traps/grate-chainlink.webp",
+                    "scope": "global",
+                    "visibility": "gm"
+                }
+            ]
+        }
+    }
+}

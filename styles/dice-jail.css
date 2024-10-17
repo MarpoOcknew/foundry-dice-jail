@@ -1,0 +1,29 @@
+#dice-jail {
+    display: none;
+    position: fixed;
+    top: 80vh;
+    left: 20px;
+    width: 150px;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    border: 2px solid red;
+    border-radius: 10px;
+    z-index: 1000;
+}
+
+#dice-jail h3 {
+    margin: 0 0 10px 0;
+    font-size: 16px;
+    color: red;
+    text-align: center;
+}
+
+.jailed-dice {
+    margin-top: 5px;
+    padding: 5px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 1px solid white;
+    border-radius: 5px;
+    /* color: black; */
+}
